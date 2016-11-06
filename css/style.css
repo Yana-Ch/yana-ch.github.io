@@ -1,4 +1,434 @@
 body {
-	
-	font-family: 'PT Sans', sans-serif;
+font-family: 'PT Sans', sans-serif;
+text-transform: uppercase;
+
+font-size: 14px;
+line-height: 21px;
+padding: 0;
+text-align: center;
 }
+html, body, ul{
+    margin:0;
+    padding:0;
+}
+ol, ul {
+  list-style: none;
+}
+
+/* Чтобы центрировать блоки */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+/*header*/
+.main-menu {
+text-align: center; 
+position: relative;
+ }
+
+.logo{
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -69px; 
+}
+
+.main-menu li{
+  float: left;
+  text-align: center;
+  width:20%;
+  padding:0;
+ }
+ .main-menu li:nth-child(2){
+  margin-right: 20%;
+ }
+.main-menu li a {
+  display:block;
+  text-decoration:none;
+  font-weight:700;  /*полужирный*/
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-size: 14px;
+  color: #000000;
+  }
+/*header - end*/
+
+/* Чтобы очищать флоаты */
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+
+/*седона- небольшой городок*/
+.sedona-description {
+  width: 100%;
+  height: 273px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sedona-description h2{
+  padding-top: 120px;
+ }
+
+h2 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+}
+/*седона- небольшой городок-end*/
+
+
+
+
+.real-city {
+text-align: center;
+padding-left: 72px;
+padding-right: 59px;
+padding-top: 58px;
+}
+.real-city-left {
+float: left;
+height: 256px;
+width: 33%;
+display: inline-block;
+font-size: 16px;
+color: #ffffff;
+text-align: center;
+vertical-align: center;
+background-color: #81b3d2;
+}
+.real-city-right {
+  float: left;  
+  height: 256px;
+}
+
+
+
+
+
+
+/* Чтобы центрировать блоки */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* Чтобы очищать флоаты */
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+.services {
+text-align: center;
+padding-left: 72px;
+padding-right: 59px;
+padding-top: 58px;
+}
+.services-item {
+font-size: 16px;
+display: inline-block;
+width: 130px;
+float: left;
+width: 25%;
+padding-left: 20px;
+padding-right: 20px;
+margin-right: 20px;
+vertical-align: middle;
+text-align: center;
+}
+
+
+
+.devils-bridge {
+text-align: center;
+padding-left: 72px;
+padding-right: 59px;
+padding-top: 58px;
+}
+.devils-bridge-left {
+  float: left;  
+  height: 256px;
+}
+
+.devils-bridge-right {
+float: left;
+height: 256px;
+width: 33%;
+display: inline-block;
+font-size: 16px;
+color: #ffffff;
+text-align: center;
+vertical-align: center;
+background-color: #81b3d2;
+}
+
+  
+
+
+
+
+
+
+
+/* Чтобы центрировать блоки */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* Чтобы очищать флоаты */
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+.bottom-description {
+text-align: center;
+padding-left: 72px;
+padding-right: 59px;
+padding-top: 58px;
+}
+.bottom-description-item {
+width: 130px;
+float: left;
+padding-left: 100px;
+padding-right: 100px;
+margin-right: 70px;
+font-size: 16px;
+display: inline-block;
+vertical-align: middle;
+text-align: center;
+
+}
+
+
+
+/*footer*/
+footer{
+  display: block;
+  font-size: 0;
+  width: 1200px;
+  height: 120px;
+  padding-top: 50px;
+
+}
+
+footer section{
+  display: inline-block;
+  width: 33%;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+  text-align: center;
+  
+
+
+}
+.websiteby p {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 26px; 
+}
+.websiteby img{
+  vertical-align: middle;
+  text-transform: uppercase;
+  margin-left: 10px;
+  margin-right: 10px;
+ }
+
+
+.visitSedona a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 26px;
+ 
+}
+.footer-item a{
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: top;
+  color: white;
+  background-color: #81b3d2;
+  font-size: 0;
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
+  
+}
+
+
+/* 2-я страница hotels------------------------------------------------------------------------------ */
+/*class= сatalog(найдено, сортировка)*/
+
+
+.hotel-filters {
+  background-image: url(../img/filters-bg.jpg);
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+.catalog-column-left {  /*найдено*/
+ float: left;
+ width: 135px;
+ }
+.catalog-header h2 {
+ line-height: 26px;
+ font-size: 21px;
+ margin: 0;  
+ }
+ .catalog-column-left {    /*найдено -левая колонка*/
+  float: left;
+  width: 135px;
+    }
+.catalog-column-middle {   /*сортировка- cредняя колонка*/
+  margin-left: 167px;
+  margin-right: 110px;
+    }
+
+
+.sort-label {       /*сортировка*/
+  display: inline-block;
+  vertical-align: top;
+  width: 114px;
+  font-size: 12px;
+  line-height: 26px;
+    }
+.sort-type ul {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+ }
+ .sort-type li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 32px;
+  font-size: 12px;
+  line-height: 26px;
+      }
+.sort-type a {
+text-decoration: none;
+position: relative;
+}
+
+
+
+
+/*class= catalog-results*/
+.catalog-range {                       
+   border-bottom: 1px solid #e5e5e5;
+  }
+.catalog-column-left {    /*картинка отеля- левая колонка*/
+      float: left;
+      width: 135px;
+    }
+.catalog-column-middle {  /*описание, цена- средняя колонка*/
+      margin-left: 167px;
+      margin-right: 110px;
+    }
+.catalog-column-right {   /*рейтинг- правая колонка*/
+      float: right;
+      width: 110px;
+      text-align: right;
+    }
+
+
+
+/*блок catalog-end*/
+
+
+
+/*catalog-resultы -каталог отелей*/
+.catalog-results {      
+    outline: none;
+    text-decoration: none;
+
+
+  }
+  .catalog-results-img img {
+      display: block;
+      width: 135px;
+      height: 90px;
+   }
+
+   .catalog-info {
+    font-size: 100px;
+
+  }
+ .result-list-title {   /*название гостиницы Amara Resort Spa*/
+      margin: 0;
+      margin-bottom: 6px;
+      font-size: 21px;
+      line-height: 26px;
+    }
+.result-list-title a {    /*цвет шрифта черный, без подчеркиваний*/
+        text-decoration: none;
+        color: #000000;
+      }
+  
+   .result-list-description { /*описание гостиницы и стоимость*/
+      display: inline-block;
+      vertical-align: top;
+       max-width: 160px;
+       margin: 0;
+      margin-right: 6px;
+      font-size: 14px;
+    }
+.result-list-description .result-list-buttons {   /*описание и кнопки*/
+ display: block;
+margin-top: 15px;
+ padding: 3px 17px;
+      }
+
+
+ .result-list-buttons-left {
+ 
+    background-color: #81b3d2; 
+    color: #ffffff;
+    text-align: center;
+  }
+ 
+
+ .result-list-buttons-right {
+    
+    background-color: #766357; 
+    color: #ffffff;
+    text-align: center;
+  }
+ 
+
+
+
+
+
+
+/*рейтинг */
+ .ratings-value {
+    padding: 3px 0;
+    background-color: #f2f2f2; 
+    color: #666666;
+    text-align: center;
+  }
+
+ 
+   .catalog-range {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e5e5e5;   
+  }
+ 
+ 
