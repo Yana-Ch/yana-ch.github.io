@@ -1,16 +1,18 @@
 body {
-font-family: 'PT Sans', sans-serif;
-text-transform: uppercase;
 
-font-size: 14px;
-line-height: 21px;
-padding: 0;
-text-align: center;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 0;
 }
-html, body, ul{
-    margin:0;
-    padding:0;
+
+html, body, ul {
+  margin: 0;
+  padding: 0;
 }
+
 ol, ul {
   list-style: none;
 }
@@ -20,37 +22,41 @@ ol, ul {
   width: 1200px;
   margin: 0 auto;
 }
+
 /*header*/
 .main-menu {
-text-align: center; 
-position: relative;
- }
+  text-align: center;
+  position: relative;
+}
 
-.logo{
+.logo {
   position: absolute;
   left: 50%;
   top: 0;
-  margin-left: -69px; 
+  margin-left: -69px;
 }
 
-.main-menu li{
+.main-menu li {
   float: left;
   text-align: center;
-  width:20%;
-  padding:0;
- }
- .main-menu li:nth-child(2){
+  width: 20%;
+  padding: 0;
+}
+
+.main-menu li:nth-child(2) {
   margin-right: 20%;
- }
+}
+
 .main-menu li a {
-  display:block;
-  text-decoration:none;
-  font-weight:700;  /*полужирный*/
+  display: block;
+  text-decoration: none;
+  font-weight: 700; /*полужирный*/
   padding-top: 18px;
   padding-bottom: 18px;
   font-size: 14px;
   color: #000000;
-  }
+}
+
 /*header - end*/
 
 /* Чтобы очищать флоаты */
@@ -60,157 +66,181 @@ position: relative;
   display: table;
 }
 
-
 /*седона- небольшой городок*/
 .sedona-description {
   width: 100%;
   height: 273px;
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
 }
-.sedona-description h2{
-  padding-top: 120px;
- }
+
+.sedona-description h2 {
+  padding-top: 37px;
+  padding-left: 11px;
+}
 
 h2 {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  padding-right: 7px;
 }
+
 h3 {
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
+  padding-top: 9px;
+  margin-right: 3px;
 }
+
 /*седона- небольшой городок-end*/
 
 
 
 
 .real-city {
-text-align: center;
-padding-left: 72px;
-padding-right: 59px;
-padding-top: 58px;
+  text-align: center;
+  padding-left: 72px;
+  padding-right: 59px;
+  margin-top: -80px;
 }
+
 .real-city-left {
-float: left;
-height: 256px;
-width: 33%;
-display: inline-block;
-font-size: 16px;
-color: #ffffff;
-text-align: center;
-vertical-align: center;
-background-color: #81b3d2;
+  float: left;
+  height: 223px;
+  width: 33%;
+  display: inline-block;
+  padding-top: 33px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #81b3d2;
 }
+
+p {
+    padding-right: 10px;
+    padding-top: 4px;
+}
+
 .real-city-right {
-  float: left;  
+  float: left;
   height: 256px;
 }
 
 
 
-
-
-
-/* Чтобы центрировать блоки */
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
 /* Чтобы очищать флоаты */
 .clearfix:after {
   content: '';
   clear: both;
   display: table;
 }
+
 .services {
-text-align: center;
-padding-left: 72px;
-padding-right: 59px;
-padding-top: 58px;
+  text-align: center;
+  padding-left: 72px;
+  padding-right: 59px;
+  padding-top: 58px;
 }
+
 .services-item {
-font-size: 16px;
-display: inline-block;
-width: 130px;
-float: left;
-width: 25%;
-padding-left: 20px;
-padding-right: 20px;
-margin-right: 20px;
-vertical-align: middle;
-text-align: center;
+  font-size: 14px;
+  display: inline-block;
+  float: left;
+  width: 25%;
+  padding-left: 41px;
+  padding-right: 37px;
+  padding-top: 3px;
+  margin-right: 22px;
+  vertical-align: middle;
+  text-align: center;
 }
-
-
 
 .devils-bridge {
-text-align: center;
-padding-left: 72px;
-padding-right: 59px;
-padding-top: 58px;
+  text-align: center;
+  padding-left: 72px;
+  padding-right: 70px;
+  padding-top: 68px;
 }
+
 .devils-bridge-left {
-  float: left;  
+  float: left;
   height: 256px;
 }
 
 .devils-bridge-right {
-float: left;
-height: 256px;
-width: 33%;
-display: inline-block;
-font-size: 16px;
-color: #ffffff;
-text-align: center;
-vertical-align: center;
-background-color: #81b3d2;
+  float: left;
+  height: 222px;
+  width: 33%;
+  display: inline-block;
+  font-size: 16px;
+  color: #ffffff;
+  padding-top: 35px;
+  text-align: center;
+  vertical-align: center;
+  background-color: #81b3d2;
 }
 
-  
 
-
-
-
-
-
-
-/* Чтобы центрировать блоки */
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
 /* Чтобы очищать флоаты */
 .clearfix:after {
   content: '';
   clear: both;
   display: table;
 }
+
 .bottom-description {
-text-align: center;
-padding-left: 72px;
-padding-right: 59px;
-padding-top: 58px;
+  text-align: center;
+  padding-left: 72px;
+  padding-right: 8px;
+  padding-top: 27px;
 }
+
 .bottom-description-item {
-width: 130px;
-float: left;
-padding-left: 100px;
-padding-right: 100px;
-margin-right: 70px;
-font-size: 16px;
-display: inline-block;
-vertical-align: middle;
-text-align: center;
+  width: 130px;
+  float: left;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-right: 70px;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
 
 }
+.interested {
+	text-align: center;
+}
+
+
+
+
+.hotel-search-button {
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 100%;
+	
+}
+.hotel-search-title {
+	color: #fff;
+	background-color: #766357;
+	margin: 0;
+	padding: 30px 0;
+	width: 575px;
+	text-align: center;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
 
 
 
 /*footer*/
-footer{
+footer {
   display: block;
   font-size: 0;
   width: 1200px;
@@ -219,39 +249,38 @@ footer{
 
 }
 
-footer section{
+footer section {
   display: inline-block;
   width: 33%;
   font-size: 16px;
   text-align: center;
   vertical-align: middle;
-  text-align: center;
-  
-
 
 }
+
 .websiteby p {
   display: inline-block;
   font-size: 14px;
-  line-height: 26px; 
+  line-height: 26px;
 }
-.websiteby img{
+
+.websiteby img {
   vertical-align: middle;
   text-transform: uppercase;
   margin-left: 10px;
   margin-right: 10px;
- }
+}
 
-
-.visitSedona a{
+.visitSedona a {
   color: black;
   font-weight: bold;
   text-decoration: none;
   font-size: 21px;
   line-height: 26px;
- 
+
 }
-.footer-item a{
+
+.footer-item a {
   display: inline-block;
   text-decoration: none;
   vertical-align: top;
@@ -261,17 +290,19 @@ footer section{
   width: 46px;
   height: 48px;
   margin-right: 6px;
-  
-}
 
+}
 
 /* 2-я страница hotels------------------------------------------------------------------------------ */
 /*class= сatalog(найдено, сортировка)*/
+.sorting {
+  padding: 13px 72px;
+  border-bottom: 1px solid #e5e5e5;
 
+}
 
-.hotel-filters {
-  background-image: url(../img/filters-bg.jpg);
-  background-repeat: no-repeat;
+.sorting-left {
+  float: left;
 }
 
 
@@ -279,156 +310,408 @@ footer section{
 
 
 
-.catalog-column-left {  /*найдено*/
- float: left;
- width: 135px;
- }
-.catalog-header h2 {
- line-height: 26px;
- font-size: 21px;
- margin: 0;  
- }
- .catalog-column-left {    /*найдено -левая колонка*/
+
+.sorting-left a {            /*стилизация сортировки по цене-типу-рейтингу*/
+    margin-left: 30px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: normal;
+    text-decoration: none;
+    color: #81b3d2;
+}
+
+.sorting-left .type, .sorting-left .rating {
+    text-decoration: none;
+    color: #cccccc;
+    border-bottom: 1px dashed #81b3d2;
+}
+
+
+
+
+
+.sorting-left-title {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 49px;
+}
+
+.sort-type {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+
+
+.sorting-right {
+  float: right;
+}
+
+/*hotel-filters*/
+.hotel-main {
+  font-family: "PT Sans", "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000;
+  background-image: url("../img/filters-bg.jpg");
+  width: 1200px;
+  height: 217px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.filters {
+  font-family: "PT Sans Bold", "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  overflow: hidden;
+  height: 216px;
+}
+
+.filters label {
+  font-family: "PT Sans Regular", "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #fff;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.filter-left {
   float: left;
-  width: 135px;
-    }
-.catalog-column-middle {   /*сортировка- cредняя колонка*/
-  margin-left: 167px;
-  margin-right: 110px;
-    }
+  padding-left: 72px;
+  width: 525px;
+  margin-top: 32px;
+}
+
+.filter-left label {
+  display: block;
+  margin: 29px 0 23px 0;
+  width: 225px;
+}
+
+.infrastructure {
+ float: left;
+ width: 200px;
+margin-right: 55px;
+  }
+.filter-name {
+    font-size: 16px;
+    line-height: 21px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 25px;
+}
 
 
-.sort-label {       /*сортировка*/
+
+
+
+.filter-housing {
+  float: left;
+  width: 225px;
+ 
+}
+
+
+
+/*фильтр с ползунком*/
+.filter-range {
+
+  width: 330px;
+  margin-right: 68px;
+  color: #ffffff;
+  text-transform: uppercase;
+  float: right;
+ 
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  margin-top: 25px;
+}
+
+.price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px; /*было -90px;*/
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+  background: #ffffff;
+}
+
+/*фильтр с ползунком-end*/
+
+.result-list-more {
+  padding: 5px 16px;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  margin-right: 2%;
+  width: 110px;
+  height: 26px;
+  color: #ffffff;
+  background: #81b3d2;
+  text-decoration: none;
+
+}
+.result-list-more:hover{   /*цвет,когда мышкой наводишь*/
+  background: #669ec0;
+}
+.result-list-more:active{
+  color: #94b9d2;
+}
+.result-list-bron{
+  padding: 5px 16px;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  width: 108px;
+  color: #ffffff;
+  background: #766357;
+  text-decoration: none;
+}
+.result-list-bron:hover{
+  background: #604e43;
+}
+.result-list-bron:active{
+  color: #928a85;
+}
+
+
+
+
+
+
+
+
+.catalog-header h2 {
+  line-height: 26px;
+  font-size: 21px;
+  margin: 0;
+}
+
+
+
+
+
+.sort-label { /*сортировка*/
+
   display: inline-block;
   vertical-align: top;
   width: 114px;
   font-size: 12px;
+  margin-right: 11px;
   line-height: 26px;
-    }
+}
+
 .sort-type ul {
   display: inline-block;
   vertical-align: top;
   margin: 0;
   padding: 0;
- }
- .sort-type li {
+}
+
+.sort-type li {
   display: inline-block;
   vertical-align: top;
   margin-right: 32px;
   font-size: 12px;
   line-height: 26px;
-      }
-.sort-type a {
-text-decoration: none;
-position: relative;
 }
 
-
-
+.sort-type a {
+  text-decoration: none;
+  position: relative;
+}
 
 /*class= catalog-results*/
-.catalog-range {                       
-   border-bottom: 1px solid #e5e5e5;
-  }
-.catalog-column-left {    /*картинка отеля- левая колонка*/
-      float: left;
-      width: 135px;
-    }
-.catalog-column-middle {  /*описание, цена- средняя колонка*/
-      margin-left: 167px;
-      margin-right: 110px;
-    }
-.catalog-column-right {   /*рейтинг- правая колонка*/
-      float: right;
-      width: 110px;
-      text-align: right;
-    }
 
+.catalog-column-left { /*картинка отеля- левая колонка*/
+  float: left;
+  width: 135px;
+  margin-right: 28px;
+}
 
+.catalog-column-right { /*рейтинг- правая колонка*/
+  float: right;
+  width: 110px;
+  text-align: right;
+}
 
 /*блок catalog-end*/
 
-
-
 /*catalog-resultы -каталог отелей*/
-.catalog-results {      
-    outline: none;
-    text-decoration: none;
+.catalog-results {
+  outline: none;
+  text-decoration: none;
 
+}
 
-  }
-  .catalog-results-img img {
-      display: block;
-      width: 135px;
-      height: 90px;
-   }
+.catalog-results-img img {
+  display: block;
+  width: 135px;
+  height: 90px;
+}
 
-   .catalog-info {
-    font-size: 100px;
+.catalog-info {
+  float: left;
+  width: 400px;
 
-  }
- .result-list-title {   /*название гостиницы Amara Resort Spa*/
-      margin: 0;
-      margin-bottom: 6px;
-      font-size: 21px;
-      line-height: 26px;
-    }
-.result-list-title a {    /*цвет шрифта черный, без подчеркиваний*/
-        text-decoration: none;
-        color: #000000;
-      }
-  
-   .result-list-description { /*описание гостиницы и стоимость*/
-      display: inline-block;
-      vertical-align: top;
-       max-width: 160px;
-       margin: 0;
-      margin-right: 6px;
-      font-size: 14px;
-    }
-.result-list-description .result-list-buttons {   /*описание и кнопки*/
- display: block;
-margin-top: 15px;
- padding: 3px 17px;
-      }
+}
 
+.result-list-title { /*название гостиницы Amara Resort Spa*/
+  margin: 0 0 6px;
+  font-size: 21px;
+  line-height: 26px;
+}
 
- .result-list-buttons-left {
- 
-    background-color: #81b3d2; 
-    color: #ffffff;
-    text-align: center;
-  }
- 
+.result-list-title a { /*цвет шрифта черный, без подчеркиваний*/
+  text-decoration: none;
+  color: #000000;
+}
 
- .result-list-buttons-right {
-    
-    background-color: #766357; 
-    color: #ffffff;
-    text-align: center;
-  }
- 
+.result-list-description { /*описание гостиницы и стоимость*/
 
+  margin: 0;
+  margin-right: 6px;
+  font-size: 14px;
+}
 
+.result-list-more,
+.result-list-bron { /*описание и кнопки*/
 
-
-
+  margin-top: 15px;
+  padding: 3px 17px;
+}
 
 /*рейтинг */
- .ratings-value {
-    padding: 3px 0;
-    background-color: #f2f2f2; 
-    color: #666666;
-    text-align: center;
-  }
+.ratings-value {
+  padding: 3px 0;
+  background-color: #f2f2f2;
+  color: #666666;
+  text-align: center;
+}
 
- 
-   .catalog-range {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #e5e5e5;   
-  }
- 
- 
+.catalog-range {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.star{
+  position: relative;
+  display: inline-block;
+  margin-bottom: 45px;
+
+  
+}
