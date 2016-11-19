@@ -77,23 +77,26 @@ ol, ul {
 
 .sedona-description h2 {
   padding-top: 37px;
-  padding-left: 11px;
+  line-height: 25px;
+}
+
+.sedona-description h3{
+	padding-top: 13px;
 }
 
 h2 {
   font-size: 21px;
-  line-height: 26px;
   font-weight: bold;
-  padding-right: 7px;
+  
 }
 
 h3 {
   font-size: 14px;
-  line-height: 26px;
+  
   font-weight: normal;
-  padding-top: 9px;
-  margin-right: 3px;
 }
+
+
 
 /*седона- небольшой городок-end*/
 
@@ -117,11 +120,18 @@ h3 {
   color: #ffffff;
   text-align: center;
   background-color: #81b3d2;
+
 }
 
-p {
-    padding-right: 10px;
-    padding-top: 4px;
+.real-city-left h2 {
+    padding-right: 9px;
+    margin-bottom: 14px;
+    line-height: 23px;
+}
+
+.real-city-left p {
+    padding-right: 9px;
+    padding-top: 8px;
 }
 
 .real-city-right {
@@ -158,11 +168,15 @@ p {
   text-align: center;
 }
 
+.services-item p{
+	padding-top: 10px;
+}
+
 .devils-bridge {
   text-align: center;
   padding-left: 72px;
   padding-right: 70px;
-  padding-top: 68px;
+  padding-top: 64px;
 }
 
 .devils-bridge-left {
@@ -175,7 +189,6 @@ p {
   height: 222px;
   width: 33%;
   display: inline-block;
-  font-size: 16px;
   color: #ffffff;
   padding-top: 35px;
   text-align: center;
@@ -183,6 +196,12 @@ p {
   background-color: #81b3d2;
 }
 
+.devils-bridge-right p {
+    padding-top: 8px;
+    font-size: 14px;
+    margin-left: 47px;
+    margin-right: 41px;
+}
 
 /* Чтобы очищать флоаты */
 .clearfix:after {
@@ -199,17 +218,20 @@ p {
 }
 
 .bottom-description-item {
-  width: 130px;
-  float: left;
-  padding-left: 100px;
-  padding-right: 100px;
-  margin-right: 70px;
-  font-size: 16px;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
 
+    width: 32%;
+    float: left;
+    margin-right: 1%;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
 }
+
+
+
+
+
 .interested {
 	text-align: center;
 }
@@ -227,7 +249,7 @@ p {
 .hotel-search-title {
 	color: #fff;
 	background-color: #766357;
-	margin: 0;
+	margin: 0 auto;
 	padding: 30px 0;
 	width: 575px;
 	text-align: center;
@@ -681,9 +703,21 @@ margin-right: 55px;
 .result-list-description { /*описание гостиницы и стоимость*/
 
   margin: 0;
-  margin-right: 6px;
   font-size: 14px;
+  margin-bottom: 10px;
 }
+.result-list-type {
+  width: 110px;
+
+}
+.result-list-description span {
+  display: inline-block;
+
+}
+
+
+
+
 
 .result-list-more,
 .result-list-bron { /*описание и кнопки*/
@@ -714,4 +748,93 @@ margin-right: 55px;
   margin-bottom: 45px;
 
   
+}
+
+
+/*sprite --------------------------------------------------------------*/
+.sprite {
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-blue-arrow-down {
+    width: 19px;
+    height: 19px;
+    background-position: -5px -5px;
+}
+
+.sprite-blue-arrow-up {
+    width: 21px;
+    height: 20px;
+    background-position: -34px -5px;
+}
+
+.sprite-check-sprite {
+    width: 38px;
+    height: 40px;
+    background-position: -65px -5px;
+}
+
+.sprite-fb-sprite {
+    width: 34px;
+    height: 38px;
+    background-position: -5px -55px;
+}
+
+.sprite-grey-arrow-down {
+    width: 31px;
+    height: 28px;
+    background-position: -49px -55px;
+}
+
+.sprite-grey-arrow-up {
+    width: 34px;
+    height: 32px;
+    background-position: -113px -5px;
+}
+
+.sprite-no-check-sprite {
+    width: 36px;
+    height: 33px;
+    background-position: -113px -47px;
+}
+
+.sprite-twitter-sprite {
+    width: 40px;
+    height: 34px;
+    background-position: -90px -90px;
+}
+
+.sprite-youtb-sprite {
+    width: 40px;
+    height: 36px;
+    background-position: -159px -5px;
+}
+
+
+
+
+input[type="checkbox"]{
+    display: none;
+ 
+}
+input[type="checkbox"] + label{
+    display: block;
+    width: 36px;
+    height: 33px;
+    background-position: -113px -47px;
+    position: relative;
+    cursor: pointer;
+}
+input[type="checkbox"] + label::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../img/sprite.png");
+    width: 38px;
+    height: 40px;
+    background-position: -65px -5px;
 }
