@@ -9,214 +9,252 @@
 </head>
 <body>
 
+<div class="wrapper container">
 
-<header class="header">
-  <nav class="main-menu">
-    <div class="container clearfix">
-      <ul>
-        <li>
-          <a class="menu-link" href="#">Информация</a>
-        </li>
-        <li>
-          <a class="menu-link" href="#">Фото и видео</a>
-        </li>
+  <header class="header">
+    <nav class="main-menu">
+      <div class="container clearfix">
+        <ul>
+          <li>
+            <a href="#" class="menu-link">Информация</a>
+          </li>
+          <li>
+            <a href="#" class="menu-link">Фото и видео</a>
+          </li>
 
-        <li>
-          <a class="menu-link" href="#">Карта штата</a>
-        </li>
-        <li>
-          <a class="menu-link" href="#">Гостиницы</a>
-        </li>
-      </ul>
-      <img class="logo" src="img/logo.png">
-    </div>
-  </nav>
-</header>
-
-
-<main class="hotel-main">
-  <div class="filters clearfix">
-    <div class="filter-left clearfix">
-      <div class="infrastructure">
-        <span class="filter-name">Инфраструктура:</span>
-        <label><input class="check" type="checkbox" id="check" checked> Бассейн</label>
-        <label><input class="check" type="checkbox" id="check" checked>  Парковка</label>
-        <label><input class="check" type="checkbox" id="check" checked> Wi-fi</label>
+          <li>
+            <a href="#" class="menu-link">Карта штата</a>
+          </li>
+          <li>
+            <a href="hotels.html" class="menu-link">Гостиницы</a>
+          </li>
+        </ul>
+        <img src="img/logo.png" class="logo" alt="лого">
       </div>
-      <div class="filter-housing">
-        <span class="checkboxes">Тип жилья:</span>
-        <label><input class="check" type="checkbox" id="check" checked> Гостиница</label>
-        <label><input class="check" type="checkbox" id="check" checked>  Мотель</label>
-        <label><input class="check" type="checkbox" id="check" checked> Апартаменты</label>
-      </div>
-    </div>
-    <div class="filter-range">
-      <div class="filter-range-title">Стоимость в сутки (р):</div>
-      <div class="price-controls">
-        <label class="min-price">от<input name="min-price" type="text" value="0"></label>
-        <label class="max-price">до<input name="max-price" type="text" value="3000"></label>
-      </div>
-      <div class="range-controls">
-        <div class="scale">
-          <div class="bar"></div>
-          <div class="range-toggle range-toggle-min">
+    </nav>
+  </header>
+
+
+  <main class="hotel-main">
+
+    <div class="filters clearfix">
+      <div class="filter-left clearfix">
+        <div class="infrastructure">
+          <h3 class="filter-name">Инфраструктура:</h3>
+
+          <div class="filter-item">
+            <input class="check" type="checkbox" id="filter-item1" >
+            <label for="filter-item1">Бассейн</label>
           </div>
-          <div class="range-toggle range-toggle-max">
+
+          <div class="filter-item">
+            <input class="check" type="checkbox" id="filter-item2" checked>
+            <label for="filter-item2">Парковка</label>
           </div>
+
+          <div class="filter-item">
+            <input class="check" type="checkbox" id="filter-item3" checked>
+            <label for="filter-item3">Wi-fi</label>
+          </div>
+
         </div>
-        <button class="btn-transparent" type="submit">Показать</button>
-      </div>
+        <div class="filter-housing">
+          <h3 class="filter-name">Тип жилья:</h3>
 
-    </div>
-  </div>
+          <div class="filter-item">
+            <input class="check" type="checkbox" id="filter-item4" >
+            <label for="filter-item4">Гостиница</label>
+          </div>
 
+          <div class="filter-item">
+            <input class="check" type="checkbox" id="filter-item5" checked>
+            <label for="filter-item5">Мотель</label>
+          </div>
 
-  <div class="sorting">
-    <div class="container clearfix">
-      <div class="sorting-left">
-        <h2 class="sorting-left-title">Найдено: 3</h2>
-        <div class="sort-type">
-          <span class="sort-label">Сортировка:</span>
-          <ul>
-            <li><a href="#" class="price">по цене</a></li>
-            <li><a href="#" class="type">по типу</a></li>
-            <li><a href="#" class="rating">по рейтингу</a></li>
-          </ul>
+          <div class="filter-item">
+            <input class="check" type="checkbox" id="filter-item6" checked>
+            <label for="filter-item6">Апартаменты</label>
+          </div>
+
         </div>
       </div>
-      <div class="sorting-right">
-        <a href="#" class="up"></a>
-        <a href="#" class="down"></a>
+      <div class="filter-range">
+        <div class="filter-range-title">Стоимость в сутки (р):</div>
+        <div class="price-controls">
+          <label class="min-price">от<input name="min-price" type="text" value="0"></label>
+          <label class="max-price">до<input name="max-price" type="text" value="3000"></label>
+        </div>
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar"></div>
+            <div class="range-toggle range-toggle-min">
+            </div>
+            <div class="range-toggle range-toggle-max">
+            </div>
+          </div>
+          <button class="btn-transparent" type="submit">Показать</button>
+        </div>
+
       </div>
     </div>
-  </div>
 
+    <div class="container">
+      <div class="sorting clearfix">
+        <div class="sorting-left">
+          <h2 class="sorting-left-title">Найдено: 3</h2>
 
-  <div class="catalog-results">
-    <div class="container clearfix">
-      <div class="catalog-range clearfix">
-        <div class="catalog-column-left">
-          <a class="catalog-results-img" href="#">
-            <img src="img/Amara_Resort_Spa.jpg" alt="картинка Amara Resort Spa" height="90" width="135">
-          </a>
-        </div>
-        <div class="catalog-info">
-          <h2 class="result-list-title">
-            <a href="#">Amara Resort Spa</a>
-          </h2>
-          <div class="result-list-description">
-            <span class="result-list-type">Гостиница</span>
-            <span>ОТ 3500 Р.</span>
-          </div>
-          <div class="result-list-description">
-
-            <a class="result-list-more" href="#">Подробнее</a>
-            <a class="result-list-bron" href="#">Забронировать</a>
-
+          <div class="sort-type">
+            <span class="sort-label">Сортировка:</span>
+            <ul>
+              <li><a href="#" class="price">по цене</a></li>
+              <li><a href="#" class="type">по типу</a></li>
+              <li><a href="#" class="rating">по рейтингу</a></li>
+            </ul>
           </div>
         </div>
-        <div class="catalog-column-right">
-          <div class="ratings-stars">
-            <img class="star" src="img/stars.png" alt="Звезда" height="17" width="17">
-            <img class="star" src="img/stars.png" alt="Звезда" height="17" width="17">
-            <img class="star" src="img/stars.png" alt="Звезда" height="17" width="17">
-            <img class="star" src="img/stars.png" alt="Звезда" height="17" width="17">
-          </div>
-          <div class="ratings-value">Рейтинг:
-            <span>8,5</span>
-          </div>
+        <div class="sorting-right">
+          <a href="#" class="up"></a>
+          <a href="#" class="down active"></a>
         </div>
       </div>
     </div>
-  </div>
-  <div class="catalog-results">
-    <div class="container clearfix">
-      <div class="catalog-range clearfix">
-        <div class="catalog-column-left">
-          <a class="catalog-results-img" href="#">
-            <img src="img/Desert_Quail_Inn.jpg" alt="картинка Amara Resort Spa" height="90" width="135">
-          </a>
-        </div>
-        <div class="catalog-info">
-          <h2 class="result-list-title">
-            <a href="#">Desert Quail Inn</a>
-          </h2>
-          <div class="result-list-description">
-            <span class="result-list-type">Мотель</span>
-            <span>ОТ 2000 Р.</span>
-          </div>
-          <div class="result-list-description">
 
-            <a class="result-list-more" href="#">Подробнее</a>
-            <a class="result-list-bron" href="#">Забронировать</a>
 
+    <div class="catalog-results">
+      <div class="container clearfix">
+        <div class="catalog-range clearfix">
+          <div class="catalog-column-left">
+            <a class="catalog-results-img" href="#">
+              <img src="img/Amara_Resort_Spa.jpg" alt="картинка Amara Resort Spa" height="90" width="135">
+            </a>
           </div>
-        </div>
-        <div class="catalog-column-right">
-          <div class="ratings-stars">
-            <img class="star" src="img/stars.png" alt="Звезда" height="17" width="17">
-            <img class="star" src="img/stars.png" alt="Звезда" height="17" width="17">
+          <div class="catalog-info">
+            <h2 class="result-list-title">
+              <a href="#">Amara Resort Spa</a>
+            </h2>
+
+            <div class="result-list-description">
+              <span class="result-list-type">Гостиница</span>
+              <span>ОТ 3500 Р.</span>
+            </div>
+            <div class="result-list-description">
+
+              <a class="result-list-more" href="#">Подробнее</a>
+              <a class="result-list-bron" href="#">Забронировать</a>
+
+            </div>
           </div>
-          <div class="ratings-value">Рейтинг:
-            <span>8,9</span>
+          <div class="catalog-column-right">
+            <div class="ratings-stars">
+              <img class="star" src="img/stars.png" alt="Звезда" height="17" width="17">
+              <img class="star" src="img/stars.png" alt="Звезда" height="17" width="17">
+              <img class="star" src="img/stars.png" alt="Звезда" height="17" width="17">
+              <img class="star" src="img/stars.png" alt="Звезда" height="17" width="17">
+            </div>
+            <div class="ratings-value">Рейтинг:
+              <span>8,5</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="catalog-results">
-    <div class="container clearfix">
-      <div class="catalog-range clearfix">
-        <div class="catalog-column-left">
-          <a class="catalog-results-img" href="#">
-            <img src="img/Villas_at_Poco_Diablo.jpg" alt="картинка Amara Resort Spa" height="90" width="135">
-          </a>
-        </div>
-        <div class="catalog-info">
-          <h2 class="result-list-title">
-            <a href="#">Villas at Poco Diablo</a>
-          </h2>
-          <div class="result-list-description">
-            <span class="result-list-type">Апартаменты</span>
-            <span>ОТ 4000 Р.</span>
+    <div class="catalog-results">
+      <div class="container clearfix">
+        <div class="catalog-range clearfix">
+          <div class="catalog-column-left">
+            <a class="catalog-results-img" href="#">
+              <img src="img/Desert_Quail_Inn.jpg" alt="картинка Amara Resort Spa" height="90" width="135">
+            </a>
           </div>
-          <div class="result-list-description">
+          <div class="catalog-info">
+            <h2 class="result-list-title">
+              <a href="#">Desert Quail Inn</a>
+            </h2>
 
-            <a class="result-list-more" href="#">Подробнее</a>
-            <a class="result-list-bron" href="#">Забронировать</a>
+            <div class="result-list-description">
+              <span class="result-list-type">Мотель</span>
+              <span>ОТ 2000 Р.</span>
+            </div>
+            <div class="result-list-description">
 
+              <a class="result-list-more" href="#">Подробнее</a>
+              <a class="result-list-bron" href="#">Забронировать</a>
+
+            </div>
           </div>
-        </div>
-        <div class="catalog-column-right">
-          <div class="ratings-stars">
-            <img class="star" src="img/stars.png" alt="Звезда" height="17" width="17">
-            <img class="star" src="img/stars.png" alt="Звезда" height="17" width="17">
-            <img class="star" src="img/stars.png" alt="Звезда" height="17" width="17">
-          </div>
-          <div class="ratings-value">Рейтинг:
-            <span>9,2</span>
+          <div class="catalog-column-right">
+            <div class="ratings-stars">
+              <img class="star" src="img/stars.png" alt="Звезда" height="17" width="17">
+              <img class="star" src="img/stars.png" alt="Звезда" height="17" width="17">
+            </div>
+            <div class="ratings-value">Рейтинг:
+              <span>8,9</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+    <div class="catalog-results">
+      <div class="container clearfix">
+        <div class="catalog-range clearfix">
+          <div class="catalog-column-left">
+            <a class="catalog-results-img" href="#">
+              <img src="img/Villas_at_Poco_Diablo.jpg" alt="картинка Amara Resort Spa" height="90" width="135">
+            </a>
+          </div>
+          <div class="catalog-info">
+            <h2 class="result-list-title">
+              <a href="#">Villas at Poco Diablo</a>
+            </h2>
+
+            <div class="result-list-description">
+              <span class="result-list-type">Апартаменты</span>
+              <span>ОТ 4000 Р.</span>
+            </div>
+            <div class="result-list-description">
+
+              <a class="result-list-more" href="#">Подробнее</a>
+              <a class="result-list-bron" href="#">Забронировать</a>
+
+            </div>
+          </div>
+          <div class="catalog-column-right">
+            <div class="ratings-stars">
+              <img class="star" src="img/stars.png" alt="Звезда" height="17" width="17">
+              <img class="star" src="img/stars.png" alt="Звезда" height="17" width="17">
+              <img class="star" src="img/stars.png" alt="Звезда" height="17" width="17">
+            </div>
+            <div class="ratings-value">Рейтинг:
+              <span>9,2</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
+  </main>
 
-  <footer>
-    <section class="visitSedona">
-      <a href="#">#VISITSEDONA</a>
-    </section>
-    <section class="footer-item">
-      <a class="Twitter" href="img/1.png"></a>
-      <a class="Facebook" href="img/2.png"></a>
-      <a class="Youtube" href="img/3.png"></a>
-    </section>
-    <section class="websiteBy">
-      <p>WEBSITE BY</p>
-      <a href="#"><img src="img/websiteBy.png" height="39" width="120"></a>
-    </section>
+
+  <footer class="footer footer-hotel">
+    <div class="container">
+      <div class="visitSedona" >
+        <a href="#">#VISITSEDONA</a>
+      </div>
+      <div class="websiteby">
+        <p>WEBSITE BY</p>
+        <a href="#"><img src="img/websiteBy.png" alt="academy" width="120" height="39"></a>
+      </div>
+      <div class="footer-item">
+        <a href="" class="Twitter"></a>
+        <a href="" class="Facebook"></a>
+        <a href="" class="Youtube"></a>
+      </div>
+    </div>
   </footer>
-</main>
+
+</div>
+
+
 </body>
 </html>
