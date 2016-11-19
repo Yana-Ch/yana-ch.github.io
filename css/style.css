@@ -28,14 +28,24 @@ ol, ul {
     background-color: #ffffff;
 }
 
-.header {
-}
+
 
 /*header*/
 .main-menu {
     text-align: center;
     position: relative;
 }
+
+.main-menu a:hover {
+  text-decoration: none;
+  color: #81b3d2;
+}
+
+.main-menu a:active {
+  text-decoration: none;
+  color: #d6d0cc;
+}
+
 
 .logo {
     position: absolute;
@@ -64,7 +74,13 @@ ol, ul {
     font-size: 14px;
     color: #000000;
 }
-
+.main-menu .main-menu-active {    
+    color: #766357;     /*коричневый цвет*/
+}
+.main-menu .main-menu-active:hover {
+  
+  color: #766357; 
+}
 /*header - end*/
 
 /* Чтобы очищать флоаты */
@@ -314,12 +330,38 @@ footer div {
     line-height: 26px;
 }
 
-.websiteby img {
-    vertical-align: middle;
-    text-transform: uppercase;
-    margin-left: 10px;
-    margin-right: 10px;
+
+
+.websiteby a {
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: top;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.0);
+    font-size: 0;
+    width: 118px;
+    height: 50px;
+    margin-right: 6px;
+    background-image: url(../img/sprites.png);
+    background-position: -8px -315px;
+
 }
+
+.websiteby a:hover {
+background-image: url(../img/sprites.png);
+background-position: -8px -374px;
+
+}
+
+
+
+
+
+
+
+
+
+
 
 .visitSedona a {
     color: black;
@@ -340,8 +382,38 @@ footer div {
     width: 46px;
     height: 48px;
     margin-right: 6px;
+}
+
+
+
+
+.twitter {
+ background-image: url(../img/sprites.png);
+ background-position: -22px -197px;
 
 }
+.twitter:hover {
+background-color: #669ec0;
+
+}
+
+
+.facebook {
+ background-image: url(../img/sprites.png);
+ background-position: -23px -230px;
+}
+.facebook:hover {
+  background-color: #669ec0;
+}
+.youtube {
+ background-image: url(../img/sprites.png);
+ background-position: -26px -267px;
+}
+.youtube:hover {
+background-color: #669ec0;
+}
+
+
 
 /* 2-я страница hotels------------------------------------------------------------------------------ */
 /*class= сatalog(найдено, сортировка)*/
@@ -385,6 +457,7 @@ footer div {
 .sorting-right {
     float: right;
     padding-top: 20px;
+
 }
 
 .sorting-right a {
@@ -398,6 +471,7 @@ footer div {
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-bottom: 10px solid #cccccc;
+    margin-right: 10px;   
 }
 .sorting-right .down {
     width: 0;
@@ -414,6 +488,20 @@ footer div {
     border-right: 5px solid transparent;
     border-top: 10px solid #81b3d2;
 }
+
+.up:hover {
+  border-color: transparent transparent #000000 transparent;
+}
+.up:active {
+  border-color: transparent transparent #81b3d2 transparent;
+}
+.down:hover {
+  border-color: #000000 transparent transparent transparent;
+}
+.down:active {
+  border-color: #81b3d2 transparent transparent transparent;
+}
+
 
 /*hotel-filters*/
 .hotel-main {
@@ -666,6 +754,12 @@ footer div {
     line-height: 26px;
 }
 
+
+
+
+
+
+
 .sort-type ul {
     display: inline-block;
     vertical-align: top;
@@ -681,10 +775,20 @@ footer div {
     line-height: 26px;
 }
 
-.sort-type a {
-    text-decoration: none;
-    position: relative;
+
+.sort-type a:hover {
+  color: #81b3d2;
+  border: none;
 }
+
+
+.sort-type a:active {
+  color: #000;
+}
+
+
+
+
 
 /*class= catalog-results*/
 
@@ -750,7 +854,11 @@ footer div {
     margin: 0;
     font-size: 14px;
     margin-bottom: 10px;
+    }
+.result-list-description a{
+font-weight: bold;
 }
+
 
 .result-list-type {
     width: 110px;
@@ -801,10 +909,11 @@ footer div {
     display: none;
 }
 
-.filter-item input:checked + label:before {
-    background-image: url('../img/check-sprite.png');
+.filter-item input:checked + label:before {  /* белая иконка с галкой */
+    background-image: url('../img/sprites.png');
     width: 26px;
     height: 22px;
+    background-position: -32px -60px;
 }
 
 .filter-item label {
@@ -813,13 +922,30 @@ footer div {
     cursor: pointer;
 }
 
-.filter-item label:before {
+.filter-item label:before {           /* белая иконка без галки */
     content: '';
     position: absolute;
     left: 0;
     top: 0;
     width: 22px;
     height: 22px;
-    background-image: url('../img/no-check-sprite.png');
+    background-image: url(../img/sprites.png);
     background-repeat: no-repeat;
-}
+    background-position: -34px -103px
+
+    /* координаты серой иконки без галки 
+    background-position: -34px -139px;
+    background-image: url('../img/sprites.png');
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 22px;
+    height: 22px;  */
+
+    /* координаты серой иконки с галкой 
+    background-image: url('../img/sprites.png');
+    width: 26px;
+    height: 22px;
+    background-position: -34px -172px; */
+
