@@ -16,7 +16,7 @@
       <div class="container clearfix">
         <ul>
           <li>
-            <a class="main-menu-active menu-link" href="#">Информация</a>
+            <a href="index.html" class="menu-link">Информация</a>
           </li>
           <li>
             <a href="#" class="menu-link">Фото и видео</a>
@@ -26,23 +26,24 @@
             <a href="#" class="menu-link">Карта штата</a>
           </li>
           <li>
-            <a href="hotels.html" class="menu-link">Гостиницы</a>
+            <a class="main-menu-active menu-link" href="hotels.html">Гостиницы</a>
           </li>
         </ul>
-        <img src="img/logo.png" class="logo" alt="лого">
+        <a href="index.html" class="logo">
+          <img src="img/logo.png" alt="лого">
+        </a>
       </div>
     </nav>
   </header>
 
-  <div class="mountains">
-    <div class="container clearfix">
-      <img src="img/mountains.jpg" alt="горы">
-    </div>
+  <div class="mountains container">
+    <img src="img/title.png" alt="горы">
   </div>
 
   <div class='sedona-description'>
     <div class="container">
       <h2>СЕДОНА — небольшой городок в АРИЗОНЕ, <br> зАСЛУЖИвающий большего!</h2>
+
       <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </div>
   </div>
@@ -51,8 +52,10 @@
     <div class="container clearfix">
       <div class="real-city-left">
         <h2>Настоящий<br>городок</h2>
+
         <p>— №1 —</p>
-        <p>Седона  —  не аттракцион для туристов,<br> там течёт своя жизнь</p>
+
+        <p>Седона — не аттракцион для туристов,<br> там течёт своя жизнь</p>
       </div>
 
       <div class="real-city-right">
@@ -65,18 +68,24 @@
     <div class="container clearfix">
       <div class="services-item">
         <img src="img/houseroom.png" alt="houseroom">
+
         <h2>Жилье</h2>
+
         <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
       </div>
       <div class="services-item">
         <img src="img/food.png" alt="food">
+
         <h2>Еда</h2>
+
         <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
       </div>
       <div class="services-item">
         <img src="img/souvenirs.png" alt="souvenirs">
-        <h2>Сувениры</h2>
-        <p>Не только китайского, но и местного производства!</p>
+
+        <h2 class="services-item-title">Сувениры</h2>
+
+        <p class="services-item-descr">Не только китайского, но и местного производства!</p>
       </div>
     </div>
   </div>
@@ -88,7 +97,9 @@
       </div>
       <div class="devils-bridge-right">
         <h2>Там есть<br> мост дьявола</h2>
+
         <p>— №2 —</p>
+
         <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       </div>
     </div>
@@ -99,19 +110,24 @@
       <div class="bottom-description-center clearfix">
         <div class="bottom-description-item">
           <h2>Небольшая площадь</h2>
-          <p>— №3 —</p>
-          <p>ВСЕ достопримечательности
-            находятся очень близко</p>
+
+          <p class="devils-bridge-numb">— №3 —</p>
+
+          <p class="devils-bridge-descr">ВСЕ достопримечательности находятся очень близко</p>
         </div>
         <div class="bottom-description-item">
           <h2>Красивая дорога</h2>
-          <p>— №4 —</P>
-          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</P>
+
+          <p class="devils-bridge-numb">— №4 —</P>
+
+          <p class="devils-bridge-descr">Ехать в Седону из Лас-Вегаса совсем не скучно!</P>
         </div>
         <div class="bottom-description-item">
           <h2>Мало туристов</h2>
-          <p>— №5 —</P>
-          <p>Большинство едет в гранд каньон и толпится там</P>
+
+          <p class="devils-bridge-numb">— №5 —</P>
+
+          <p class="devils-bridge-descr">Большинство едет в гранд каньон и толпится там</P>
         </div>
       </div>
     </div>
@@ -120,30 +136,74 @@
   <div class="interested">
     <div class="container">
       <h2>Заинтересовались?</h2>
+
       <p>Укажите предполагаемые даты поездки,<br>
         и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <a href="#" class="hotel-search-button">
+
+      <div class="hotel-search-button">
         <h3 class="hotel-search-title">Поиск гостиницы в Седоне</h3>
-      </a>
+
+        <div class="hotel-form">
+          <form>
+            <div class="indate clearfix">
+              <label for="indate">дата заезда:</label>
+              <div class="calendar">
+                <button type="button" class="cal-but"></button>
+              </div>
+              <input id="indate" type="text" name="date" value="" placeholder="24 Апреля 2016">
+            </div>
+
+            <div class="outdate clearfix">
+              <label for="outdate">
+                <span>дата выезда:</span>
+              </label>
+
+              <div class="calendar">
+                <button type="button" class="cal-but">A</button>
+              </div>
+              <input id="outdate" type="text" name="date" value="" placeholder="4 июля 2016">
+            </div>
+
+            <div class="counter clearfix">
+              <div class="counter-left">
+                <label for="counter-left">ВзрослыЕ:</label>
+                <button class="counter-minus"></button>
+                <input type="text" id="counter-left" value="2">
+                <button class="counter-plus"></button>
+              </div>
+              <div class="counter-right">
+                <label for="counter-right">ДетИ:</label>
+                <button class="counter-minus"></button>
+                <input type="text" id="counter-right" value="2">
+                <button class="counter-plus"></button>
+              </div>
+            </div>
+
+            <button class="find" id="find">НАЙТИ</button>
+          </form>
+        </div>
+
+      </div>
     </div>
   </div>
 
   <div class="maps">
     <div class="container">
-      <script src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=hYAzMLIvDqwM6YsKfi9YrlTro3yDaYfe&amp;width=1200&amp;height=590&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+      <script
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=hYAzMLIvDqwM6YsKfi9YrlTro3yDaYfe&amp;width=1200&amp;height=590&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
     </div>
   </div>
 
   <footer class="footer">
     <div class="container">
-      <div class="visitSedona" >
+      <div class="visitSedona">
         <a href="#">#VISITSEDONA</a>
       </div>
-       <div class="websiteby">
+      <div class="websiteby">
         <p>WEBSITE BY</p>
         <a href="#" class="htmlacademy" name="htmlacademy">htmlacademy</a>
       </div>
-     
+
       <div class="footer-item">
         <a href="#" class="twitter" name="Twitter">Twitter</a>
         <a href="#" class="facebook" name="Facebook">Facebook</a>
